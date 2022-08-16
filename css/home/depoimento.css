@@ -58,3 +58,12 @@
         justify-self: center;
     }
 }
+
+@media (min-width: 1200px) {
+    .depoimento img {
+        max-width:1000px;
+    }
+    .depoimento {
+        grid-template-columns: 1fr 1fr;
+    }
+}
