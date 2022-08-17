@@ -16,3 +16,6 @@
 
 /* Produtos */
 @import "./produtos/produtos-lista.css";
+
+/* Termos e Condições */
+@import "./termos/termos.css";
