@@ -15,6 +15,7 @@
 @import "./home/depoimento.css";
 
 /* Produtos */
+@import "./produtos/produtos.css";
 @import "./produtos/produtos-lista.css";
 
 /* Termos e Condições */
