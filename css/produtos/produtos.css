@@ -1,5 +1,5 @@
 .produtos-bg {
-    background: var(--cor-11);
+    background: linear-gradient(to right, var(--cor-0) 25%,var(--cor-11) 0% );
 }
 
 .produtos {
@@ -73,4 +73,31 @@
 .produtos-conteudo img {
     width: 24px;
     margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+    .produtos-bg {
+        background: var(--cor-11);
+    }
+    .produtos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .produtos-conteudo {
+        grid-template-columns: 1fr;
+    }
+    .produtos ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+    }
+    .produtos a {
+        place-self: start;
+    }
+
 }
