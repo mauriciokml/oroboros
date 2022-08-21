@@ -18,5 +18,9 @@
 @import "./produtos/produtos.css";
 @import "./produtos/produtos-lista.css";
 
+/* Produto */
+@import "./produto/produto.css";
+
+
 /* Termos e Condições */
 @import "./termos/termos.css";
