@@ -1,0 +1,123 @@
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#produto .titulo p {
+    text-transform: uppercase;
+}
+
+.produto-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto-imagens img {
+    flex: 1;
+    min-width: 200px;
+}
+
+.produto-imagens img:first-child {
+    min-width: 100%;
+}
+
+.produto-conteudo > p {
+    margin-bottom: 32px;
+}
+
+.produto-comprar {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+    margin-bottom: 40px;
+}
+
+.produto-comprar a {
+    grid-row: span 2;
+}
+
+.produto-comprar span {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-12);
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.produto-conteudo h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 12px;
+}
+
+.produto-informacoes,
+.produto-ficha {
+    padding: 32px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+}
+
+.produto-informacoes {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.produto-informacoes img {
+    width: 24px;
+    margin-bottom: 8px;
+}
+
+.produto-informacoes h3 {
+    margin-bottom: 8px;
+}
+
+.produto-ficha li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-11);
+}
+
+.produto-ficha li:last-child {
+    border-bottom: none;
+}
+
+.produto-ficha-extra{
+    text-align: center;
+    font-size: .7rem;
+    color: var(--cor-6);
+}
+
+.produto-ficha span {
+    color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+    .produto {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .produto-imagens {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .produto-informacoes {
+        grid-template-columns: 1fr;
+    }
+    .produto-comprar {
+        grid-template-columns: 1fr;
+    }
+}
