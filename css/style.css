@@ -6,6 +6,7 @@
 
 /* Utilidades */
 @import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
 
 /* Home */
@@ -20,6 +21,11 @@
 
 /* Produto */
 @import "./produto/produto.css";
+
+
+/* Contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
 
 
 /* Termos e Condições */
