@@ -1,4 +1,4 @@
-const links = document.querySelectorAll("nav a");
+const links = document.querySelectorAll("ul a");
 
 function ativarLink(link) {
 const href = link.href;
