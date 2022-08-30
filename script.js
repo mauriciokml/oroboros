@@ -11,3 +11,19 @@ if(href === url) {
 console.log(url)
 }
 links.forEach(ativarLink);
+
+
+const imagens = document.querySelectorAll('#galeria-mel img');
+
+function galeriaTrocar(event) {
+    const principal = document.querySelector("#imagem-mel-principal");
+    const clicada = event.currentTarget;
+    principal.src = clicada.src;
+    principal.alt = clicada.alt;
+}
+
+function galeriaClick(imagem) {
+    imagem.addEventListener('click', galeriaTrocar);
+}
+
+imagens.forEach(galeriaClick);
