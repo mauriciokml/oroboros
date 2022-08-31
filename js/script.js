@@ -1,14 +1,12 @@
-const links = document.querySelectorAll("ul a");
+const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
 const href = link.href;
-const url = document.location.href;
+const url = location.href;
+    if (url.includes(href)) {
+        link.classList.add("ativo");
+        }
 
-if(href === url) {
-    link.style.backgroundColor = "black";
-    link.style.color = "white";
-}
-console.log(url)
 }
 links.forEach(ativarLink);
 
