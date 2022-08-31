@@ -29,20 +29,21 @@ parametros.forEach(ativarProduto);
 
 
 
+// Galeria de Produtos
 
+const galeria = document.querySelectorAll('.produto-imagens img');
+const galeriaContainer = document.querySelector(".produto-imagens");
 
-
-const imagens = document.querySelectorAll('#galeria-mel img');
-
-function galeriaTrocar(event) {
-    const principal = document.querySelector("#imagem-mel-principal");
-    const clicada = event.currentTarget;
-    principal.src = clicada.src;
-    principal.alt = clicada.alt;
+function trocarImagem(event) {
+    const img = event.currentTarget;
+    const media = matchMedia("(min-width: 1000px)").matches;
+    if(media) {
+        galeriaContainer.prepend(img);
+    }
 }
 
-function galeriaClick(imagem) {
-    imagem.addEventListener('click', galeriaTrocar);
+function eventosGaleria(img) {
+    img.addEventListener('click', trocarImagem);
 }
 
-imagens.forEach(galeriaClick);
+galeria.forEach(eventosGaleria);
